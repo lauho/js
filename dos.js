@@ -1,12 +1,4 @@
-function calcularPromedio(notas) {
-  return (
-    notas.reduce((acumulador, actual) => acumulador + actual, 0) / notas.length
-  );
-}
-
-function estaAprobado(nota, minima = 6) {
-  return nota >= minima;
-}
+import { calcularPromedio, estaAprobado } from "./utils";
 
 const estudiantes = [
   { nombre: "Lautaro", notas: [10, 9, 9, 8.5] },
